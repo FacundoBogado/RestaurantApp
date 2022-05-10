@@ -9,14 +9,21 @@
 /* Begin PBXBuildFile section */
 		67C63C8C2829436200E5D73D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63C8B2829436200E5D73D /* AppDelegate.swift */; };
 		67C63C8E2829436200E5D73D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63C8D2829436200E5D73D /* SceneDelegate.swift */; };
-		67C63C902829436200E5D73D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63C8F2829436200E5D73D /* ViewController.swift */; };
-		67C63C932829436200E5D73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C63C912829436200E5D73D /* Main.storyboard */; };
 		67C63C962829436200E5D73D /* RestaurantApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67C63C942829436200E5D73D /* RestaurantApp.xcdatamodeld */; };
 		67C63C982829436500E5D73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C63C972829436500E5D73D /* Assets.xcassets */; };
 		67C63C9B2829436500E5D73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C63C992829436500E5D73D /* LaunchScreen.storyboard */; };
 		67C63CA62829436500E5D73D /* RestaurantAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CA52829436500E5D73D /* RestaurantAppTests.swift */; };
 		67C63CB02829436500E5D73D /* RestaurantAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CAF2829436500E5D73D /* RestaurantAppUITests.swift */; };
 		67C63CB22829436500E5D73D /* RestaurantAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CB12829436500E5D73D /* RestaurantAppUITestsLaunchTests.swift */; };
+		67C63CC62829510500E5D73D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CC52829510500E5D73D /* CustomTableViewCell.swift */; };
+		67C63CC82829578900E5D73D /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CC72829578900E5D73D /* RestaurantService.swift */; };
+		67C63CCB28295AC100E5D73D /* RestaurantDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CCA28295AC100E5D73D /* RestaurantDTO.swift */; };
+		67C63CCE28295F3500E5D73D /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CCD28295F3500E5D73D /* RestaurantController.swift */; };
+		67C63CD328296BFD00E5D73D /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CD228296BFD00E5D73D /* RestaurantViewController.swift */; };
+		67C63CD9282AB7B300E5D73D /* RestaurantServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CD8282AB7B300E5D73D /* RestaurantServiceTests.swift */; };
+		67C63CDF282ABAA600E5D73D /* RestaurantControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CDE282ABAA600E5D73D /* RestaurantControllerTests.swift */; };
+		67C63CE4282ABEAF00E5D73D /* RestaurantControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CE3282ABEAF00E5D73D /* RestaurantControllerSpy.swift */; };
+		67C63CE9282AC5A200E5D73D /* RestaurantServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C63CE8282AC5A200E5D73D /* RestaurantServiceSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,6 @@
 		67C63C882829436200E5D73D /* RestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C63C8B2829436200E5D73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67C63C8D2829436200E5D73D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67C63C8F2829436200E5D73D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67C63C922829436200E5D73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67C63C952829436200E5D73D /* RestaurantApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestaurantApp.xcdatamodel; sourceTree = "<group>"; };
 		67C63C972829436500E5D73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C63C9A2829436500E5D73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,15 @@
 		67C63CAB2829436500E5D73D /* RestaurantAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C63CAF2829436500E5D73D /* RestaurantAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppUITests.swift; sourceTree = "<group>"; };
 		67C63CB12829436500E5D73D /* RestaurantAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67C63CC52829510500E5D73D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		67C63CC72829578900E5D73D /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		67C63CCA28295AC100E5D73D /* RestaurantDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDTO.swift; sourceTree = "<group>"; };
+		67C63CCD28295F3500E5D73D /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
+		67C63CD228296BFD00E5D73D /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		67C63CD8282AB7B300E5D73D /* RestaurantServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceTests.swift; sourceTree = "<group>"; };
+		67C63CDE282ABAA600E5D73D /* RestaurantControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantControllerTests.swift; sourceTree = "<group>"; };
+		67C63CE3282ABEAF00E5D73D /* RestaurantControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantControllerSpy.swift; sourceTree = "<group>"; };
+		67C63CE8282AC5A200E5D73D /* RestaurantServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,12 @@
 		67C63C8A2829436200E5D73D /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				67C63CCC28295F2900E5D73D /* Controller */,
+				67C63CC4282950A700E5D73D /* UIViews */,
+				67C63CC228294FE800E5D73D /* ViewController */,
+				67C63CBE2829446C00E5D73D /* Model */,
 				67C63C8B2829436200E5D73D /* AppDelegate.swift */,
 				67C63C8D2829436200E5D73D /* SceneDelegate.swift */,
-				67C63C8F2829436200E5D73D /* ViewController.swift */,
-				67C63C912829436200E5D73D /* Main.storyboard */,
 				67C63C972829436500E5D73D /* Assets.xcassets */,
 				67C63C992829436500E5D73D /* LaunchScreen.storyboard */,
 				67C63C9C2829436500E5D73D /* Info.plist */,
@@ -116,6 +132,10 @@
 		67C63CA42829436500E5D73D /* RestaurantAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				67C63CE1282ABE9300E5D73D /* Spies */,
+				67C63CE0282ABE7500E5D73D /* Controller */,
+				67C63CDA282AB85B00E5D73D /* UIView */,
+				67C63CD7282AB7A200E5D73D /* Service */,
 				67C63CA52829436500E5D73D /* RestaurantAppTests.swift */,
 			);
 			path = RestaurantAppTests;
@@ -128,6 +148,103 @@
 				67C63CB12829436500E5D73D /* RestaurantAppUITestsLaunchTests.swift */,
 			);
 			path = RestaurantAppUITests;
+			sourceTree = "<group>";
+		};
+		67C63CBE2829446C00E5D73D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CCF2829667400E5D73D /* ViewModel */,
+				67C63CC928295AB300E5D73D /* DTOs */,
+				67C63CBF2829447A00E5D73D /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67C63CBF2829447A00E5D73D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CC02829448000E5D73D /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67C63CC02829448000E5D73D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CC72829578900E5D73D /* RestaurantService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		67C63CC228294FE800E5D73D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CD228296BFD00E5D73D /* RestaurantViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		67C63CC4282950A700E5D73D /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CC52829510500E5D73D /* CustomTableViewCell.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		67C63CC928295AB300E5D73D /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CCA28295AC100E5D73D /* RestaurantDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		67C63CCC28295F2900E5D73D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CCD28295F3500E5D73D /* RestaurantController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67C63CCF2829667400E5D73D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67C63CD7282AB7A200E5D73D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CD8282AB7B300E5D73D /* RestaurantServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		67C63CDA282AB85B00E5D73D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		67C63CE0282ABE7500E5D73D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CDE282ABAA600E5D73D /* RestaurantControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67C63CE1282ABE9300E5D73D /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				67C63CE3282ABEAF00E5D73D /* RestaurantControllerSpy.swift */,
+				67C63CE8282AC5A200E5D73D /* RestaurantServiceSpy.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +353,6 @@
 			files = (
 				67C63C9B2829436500E5D73D /* LaunchScreen.storyboard in Resources */,
 				67C63C982829436500E5D73D /* Assets.xcassets in Resources */,
-				67C63C932829436200E5D73D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C63C962829436200E5D73D /* RestaurantApp.xcdatamodeld in Sources */,
-				67C63C902829436200E5D73D /* ViewController.swift in Sources */,
+				67C63CD328296BFD00E5D73D /* RestaurantViewController.swift in Sources */,
+				67C63CC62829510500E5D73D /* CustomTableViewCell.swift in Sources */,
+				67C63CCE28295F3500E5D73D /* RestaurantController.swift in Sources */,
+				67C63CC82829578900E5D73D /* RestaurantService.swift in Sources */,
 				67C63C8C2829436200E5D73D /* AppDelegate.swift in Sources */,
 				67C63C8E2829436200E5D73D /* SceneDelegate.swift in Sources */,
+				67C63CCB28295AC100E5D73D /* RestaurantDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C63CD9282AB7B300E5D73D /* RestaurantServiceTests.swift in Sources */,
+				67C63CE4282ABEAF00E5D73D /* RestaurantControllerSpy.swift in Sources */,
 				67C63CA62829436500E5D73D /* RestaurantAppTests.swift in Sources */,
+				67C63CE9282AC5A200E5D73D /* RestaurantServiceSpy.swift in Sources */,
+				67C63CDF282ABAA600E5D73D /* RestaurantControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67C63C912829436200E5D73D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67C63C922829436200E5D73D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67C63C992829436500E5D73D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,9 +564,9 @@
 				INFOPLIST_FILE = RestaurantApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,9 +592,9 @@
 				INFOPLIST_FILE = RestaurantApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
